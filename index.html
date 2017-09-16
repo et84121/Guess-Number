@@ -34,33 +34,29 @@
   </head>
   <body>
     <div class="container">
-      <!-- time countdown -->
+      <!-- info -->
       <div class="row">
         <div class="col">
-          <h3 class="text-center mt-2" id="countdownTime">time Countdown</h3>
+          <div id="txt" class="alert alert-primary mt-2" role="alert">
+            Guess what number do i think ?  (between 1 an 10)
+          </div>
         </div>
       </div>
       <!-- pic -->
       <div class="row">
         <div class="col">
           <div class="text-center mb-3">
-            <img src="https://dummyimage.com/600x400/000000/fff.png&text=ugly+face+" class="rounded" alt="...">
+            <img id="pic" src="img/rageface_info.png" class="rounded" >
           </div>
         </div>
       </div>
       <!-- answer input -->
-      <div class="row">
-        <div class="col">
-          <div class="text-center">
-            <form class="form-inline ">
-              <div class="form-group w-75">
-                <input type="text" class="form-control w-100" id="ans" placeholder="which number are you guess?">
-              </div>
-              <div class="form-group mx-3">
-                <button type="submit" class="btn btn-primary ">enter answer</button>
-              </div>
-            </form>
-          </div>
+      <div class="row justify-content-center">
+        <div class="col-9">
+          <input id="input_ans" type="text" class="form-control" id="ans" placeholder="which number are you guess?">
+        </div>
+        <div class="col-2">
+          <button id="btn_ans" type="submit" class="btn btn-primary ">enter answer</button>
         </div>
       </div>
     </div>
